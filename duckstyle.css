@@ -29,7 +29,6 @@ p {
 }
   
 .navbar a {
-    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -47,3 +46,106 @@ p {
       background-color: #4CAF50;
       color: white;
 }
+
+footer {
+    background-color: #A32638;
+    font-family: "Helvetica";
+    color: #f2f2f2;
+}
+
+
+/* rules for desktop */
+@media only screen and (min-width: 800px)
+{ 
+    .stevens-logo{
+        height:250px;
+        width: 500px;
+    }
+
+    p {
+        align-items: stretch;
+    }
+    .navbar a{
+        align-items: center;
+        flex-wrap: wrap;
+        float: left;
+        flex-direction: row;
+    }
+
+    .logo{
+    font-family: "Helvetica";
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+
+
+    .info {
+        align-items: stretch;
+    }
+}
+
+
+
+/* rules for tablets */
+@media only screen and (max-width: 800px)
+{ 
+    .stevens-logo{
+        height:125px;
+        width: 250px;
+        align-items: center;
+        font-size: 1em;
+    }
+
+    h1, h2 {
+        font-size: 0.9em;
+    }
+
+
+    .navbar a{
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 0.9em;
+        float: left;
+        flex-direction: row;
+    }
+
+    .info {
+        align-items: stretch;
+    }
+}
+
+/* rules for phones */
+@media only screen and (max-width:400px) {
+
+
+    .stevens-logo{
+        height:625px;
+        width: 125px;
+    }
+
+    h1, h2 {
+        font-size: 0.8em;
+    }
+
+
+    .navbar a{
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 0.8em;
+        float: left;
+        flex-direction: row;
+    }
+
+    .navbar {
+        
+    }
+
+    .info {
+        align-items: stretch;
+    }
+
+}
+
+
+
