@@ -2,24 +2,63 @@
 <head>
 <title> Duckipedia </title>
 <link rel="stylesheet" href="duckstyle.css">
+<script src="duckjs.js">
+</script>
 </head>
 <body>
-<h1 align="left"> Duckipedia </h1>
+<h1 align="left"><h1 class = "logo"> Duckipedia</h1>
+<text align="right"><div class="wrap">
+</div>
+</text>
+
+
 
 	<div class="navbar" id="topnavbar">
-  		<td align="center"><a href="index.html">Home</a></td>
-  		<td align="center"><a href="duckipediaHistory.html">Stevens History</a></td>
-  		<td align="center"><a href="duckipediaBuildings.html">Buildings on Campus</a></td>
-  		<td align="center"><a href="duckipediaStaff.html">Staff</a></td>
-  		<td align="center"><a href="duckipediaAdmissions.html">Admissions</a></td>
+  		<align="center"><a href="index.html">Home</a>
+  		<align="center"><a href="duckipediaHistory.html">Stevens History</a>
+  		<align="center"><a href="duckipediaBuildings.html">Buildings on Campus</a>
+  		<align="center"><a href="duckipediaStaff.html">CS Department Staff</a>
+  		<align="center"><a href="duckipediaAdmissions.html">Admissions</a>
 	</div>
 
 <h2 align="center"> Home </h2>
-<table width="750px" align="center">
+<table align="center">
 	<tr>
 		<td><p align="center">Welcome to Duckipedia! We are a student created and student run encyclopedia all about Stevens Institute of Technology. Our goal is to provide accurate and up-to-date information about the Stevens campus, staff, and the history of the school for prospective students, incoming students, and inquiring minds. </p></td>
 	</tr>
+	<tr>
+		<td align="center"><a href="https://stevens.edu"><img class="stevens-logo" img src="https://i.imgur.com/y7FMTjP.png" title="Stevens Logo" width="500px" height="250px"></a></td>
+	</tr>
 </table>
+
+<h3 align ="center"> Comments </h2>
+<div>
+<form align = "center" name="form1" id="form1" autocomplete="off" method="get" onsubmit="summarize(); return false;">
+      <fieldset>
+        <legend>Submit a Comment</legend>
+        <label for="firstname" class="labelitem">First Name:</label>
+        <input type="text" name="firstname" id="firstname" size="24" maxlength="32"
+               placeholder="Enter first name."/><br />
+        <label for="lastname" class="labelitem">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" size="24" maxlength="32"
+               placeholder="Enter last name."/><br />
+        <label for="comment" class="labelitem" align = "center" >Enter your comment:</label>
+        <textarea name="comment" id="comment" rows="10" cols="20" placeholder="Enter your comment here."></textarea><br/><br>
+        <input type="submit" value="Submit" align = "center">
+        </div><br/>
+      </fieldset>
+    </form>
+
+ <div id="comment_section">
+        <fieldset>
+          <legend>Comments</legend>
+          <section id="comments"></section>
+        </fieldset>
+      </div>
+
+<footer>
+  <p>Done by: Natalie Filip, Jake Hull, Nick Percivale, Ronald Kim, & Leo Schaffner</p>
+</footer>
 
 </body>
 </html>

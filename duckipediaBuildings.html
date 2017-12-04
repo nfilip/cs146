@@ -2,19 +2,97 @@
 <head>
 <title> Duckipedia </title>
 <link rel="stylesheet" href="duckstyle.css">
+<script src="duckjs.js">
+</script>
 </head>
 <body>
 <h1 align="left"> Duckipedia </h1>
+<text align="right"><div class="wrap">
+</div>
+</text>
 
 <div class="navbar" id="topnavbar">
   		<td align="center"><a href="index.html">Home</a></td>
   		<td align="center"><a href="duckipediaHistory.html">Stevens History</a></td>
   		<td align="center"><a href="duckipediaBuildings.html">Buildings on Campus</a></td>
-  		<td align="center"><a href="duckipediaStaff.html">Staff</a></td>
+  		<td align="center"><a href="duckipediaStaff.html">CS Department Staff</a></td>
   		<td align="center"><a href="duckipediaAdmissions.html">Admissions</a></td>
 	</div>
 
 <h2 align="center"> Buildings on Campus </h2>
+<table align="center">
+	<tr><td align="center">
+	<h3>Academic Buildings</h3>
+		<hr width="500px" align="left"> </hr>
+		<p>Edwin A. Stevens Hall<br>
+		Burchard Building<br>
+		McLean Hall<br>
+		Babbio Center<br>
+		Morton-Peirce-Kidde Complex<br>
+		North Building<br>
+		Carnegie Laboratory<br>
+		Samuel C. Williams Library</p>
+
+	<h3>Residence Halls</h3>
+		<hr width="500px" align="left"> </hr>
+		<p>Davis Hall<br>
+		Hayden Hall<br>
+		Humphreys Hall<br>
+		Castle Point Hall<br>
+		Palmer Hall<br>
+		Jonas Hall</p>
+
+	<h3>Recreational Buildings</h3>
+		<hr width="500px" align="left"> </hr>
+		<p>Walker Gymnasium<br>
+		Schaefer Athletic and Recreation Center<br>
+		Jacobus Student Center<br>
+		DeBaun Field<br>
+		DeBaun Auditorium</p>
+
+	<h3>Dining Halls</h3>
+		<hr width="500px" align="left"> </hr>
+		<p>Pierce Dining Hall<br>
+		Pierce Cafe<br>
+		Colonel John's<br>
+		America's Cup<br>
+		Red & Gray Cafe<br>
+		Washington Street Wednesday<br></p>
+	</tr></td>
+</table>
+
+
+<h3 align ="center"> Comments </h2>
+<div>
+<form align = "center" name="form1" id="form1" autocomplete="off" method="get" onsubmit="summarize(); return false;">
+      <fieldset>
+        <legend>Submit a Comment</legend>
+        <label for="firstname" class="labelitem">First Name:</label>
+        <input type="text" name="firstname" id="firstname" size="24" maxlength="32"
+               placeholder="Enter first name."/><br />
+        <label for="lastname" class="labelitem">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" size="24" maxlength="32"
+               placeholder="Enter last name."/><br />
+        <label for="comment" class="labelitem" align = "center" >Enter your comment:</label>
+        <textarea name="comment" id="comment" rows="10" cols="20" placeholder="Enter your comment here."></textarea><br/><br>
+    <section id="reset_submit">
+        <input type="reset" value="Reset" onclick="reset_form()" />
+        <input type="submit" value="Submit" />
+    </section><br />
+        </div><br/>
+      </fieldset>
+    </form>
+
+ <div id="comment_section">
+        <fieldset>
+          <legend>Comments</legend>
+          <section id="comments"></section>
+        </fieldset>
+      </div>
+
+<footer>
+  <p>Done by: Natalie Filip, Jake Hull, Nick Percivale, Ronald Kim, & Leo Schaffner</p>
+</footer>
 
 </body>
 </html>

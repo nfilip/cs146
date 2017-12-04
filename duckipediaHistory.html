@@ -2,19 +2,95 @@
 <head>
 <title> Duckipedia </title>
 <link rel="stylesheet" href="duckstyle.css">
+<script src="duckjs.js">
+</script>
 </head>
 <body>
 <h1 align="left"> Duckipedia </h1>
+<text align="right"><div class="wrap">
+</div>
+</text>
 
 <div class="navbar" id="topnavbar">
-  		<td align="center"><a href="index.html">Home</a></td>
-  		<td align="center"><a href="duckipediaHistory.html">Stevens History</a></td>
-  		<td align="center"><a href="duckipediaBuildings.html">Buildings on Campus</a></td>
-  		<td align="center"><a href="duckipediaStaff.html">Staff</a></td>
-  		<td align="center"><a href="duckipediaAdmissions.html">Admissions</a></td>
+  		<align="center"><a href="index.html">Home</a>
+  		<align="center"><a href="duckipediaHistory.html">Stevens History</a>
+  		<align="center"><a href="duckipediaBuildings.html">Buildings on Campus</a>
+  		<align="center"><a href="duckipediaStaff.html">CS Department Staff</a>
+  		<align="center"><a href="duckipediaAdmissions.html">Admissions</a>
+	</div>
 </div>
 
 <h2 align="center"> Stevens History </h2>
+
+
+
+<table align ="center">
+  <tr><td align = "center">
+<h3>Founders</h3>
+Edwin A. Stevens died in 1868. In his will, he left a request for the establishment of an "institution of learning," providing his trustees with land and funds. Edwin’s will was executed by surviving wife Martha Stevens who would also serve as a lifetime Trustee of the Institute. 
+</td></tr>
+<tr><td align = "center">
+<img src="https://i.imgur.com/mlr6aNp.jpg" title="source: imgur.com" / height=200px width =200px align = center></a>
+</td></tr>
+<tr><td>
+<hr align="center"> </hr>
+</td></tr>
+
+<tr><td align ="center">
+<h3>Establishing the University</h3>
+Stevens Institute of Technology opened in 1870. The campus began on the edge of the family estate at Castle Point in Hoboken. The honor code was established in 1906, and was the first of its kind at a technical school.
+</td></tr>
+<tr><td align = center>
+<img src="https://i.imgur.com/1kXDFPf.jpg" title="source: imgur.com" height=200px width=250px/></a>
+</td></tr>
+<tr><td>
+<hr align="center"> </hr>
+</td></tr>
+
+<tr><td align ="center">
+<h3>Recent History</h3>
+Stevens' undergraduate program became coed in 1971. In 1982, Stevens was the first institution in the U.S. to require all incoming freshman undergraduate students to purchase and use a personal computer. Currently Stevens enrolls 3,123 undergraduate students.
+</td></tr>
+<tr><td align = center>
+<img src="https://i.imgur.com/3wGwekS.jpg" title="source: imgur.com" /></a>
+</td></tr>
+<tr><td>
+<hr align="center"> </hr>
+</td></tr>
+</table>
+
+
+<h3 align ="center"> Comments </h2>
+<div>
+<form align = "center" name="form1" id="form1" autocomplete="off" method="get" onsubmit="summarize(); return false;">
+      <fieldset>
+        <legend>Submit a Comment</legend>
+        <label for="firstname" class="labelitem">First Name:</label>
+        <input type="text" name="firstname" id="firstname" size="24" maxlength="32"
+               placeholder="Enter first name."/><br />
+        <label for="lastname" class="labelitem">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" size="24" maxlength="32"
+               placeholder="Enter last name."/><br />
+        <label for="comment" class="labelitem" align = "center" >Enter your comment:</label>
+        <textarea name="comment" id="comment" rows="10" cols="20" placeholder="Enter your comment here."></textarea><br/><br>
+        <section id="reset_submit">
+        <input type="reset" value="Reset" onclick="reset_form()" />
+        <input type="submit" value="Submit" />
+      </section><br />
+        </div><br/>
+      </fieldset>
+    </form>
+
+ <div id="comment_section">
+        <fieldset>
+          <legend>Comments</legend>
+          <section id="comments"></section>
+        </fieldset>
+      </div>
+
+<footer>
+  <p>Done by: Natalie Filip, Jake Hull, Nick Percivale, Ronald Kim, & Leo Schaffner</p>
+</footer>
 
 </body>
 </html>
